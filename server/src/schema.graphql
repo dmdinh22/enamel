@@ -8,8 +8,8 @@ type Mutation {
   captureEmail(email: String!): User
   signup(
     id: String!
-    firstname: String!
-    lastname: String!
+    firstName: String!
+    lastname: STring!
     password: String!
   ): AuthPayload!
   login(email: String!, password: String!): AuthPayload!
@@ -28,7 +28,6 @@ type User {
   status: String
   createdAt: Date
 }
-
 type AuthPayload {
   token: String!
   user: User!
